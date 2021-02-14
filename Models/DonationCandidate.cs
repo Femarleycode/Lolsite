@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Lolsite.Models
+{
+	public class DonationCandidate
+	{
+		[Key]
+		public int id { get; set; }
+
+		[Column(TypeName = "nvarchar(100)")]
+		public string fullname { get; set; }
+
+		[Column(TypeName = "nvarchar(16)")]
+		public string mobile { get; set; }
+
+		[Column(TypeName = "nvarchar(100)")]
+		public string email { get; set; }
+
+		public string age { get; set; }
+
+		[Column(TypeName = "nvarchar(3)")]
+		public string bloodGroup { get; set; }
+
+		[Column(TypeName = "nvarchar(100)")]
+		public string address { get; set; }
+	}
+}
