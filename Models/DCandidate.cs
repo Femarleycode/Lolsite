@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lolsite.Models
 {
-	public class DonationCandidate
+	public class DCandidate
 	{
 		[Key]
 		public int id { get; set; }
